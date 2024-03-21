@@ -5,6 +5,7 @@
 
 * {
     font-family: "Work Sans", sans-serif;
+    margin: 0;
 }
 
 .primary-btn {
@@ -20,12 +21,14 @@
 
 .text-description-gray {
     color: #727272;
+    margin-bottom: 10px;
 }
 
 .section-title {
     font-size: 2.8rem;
     font-weight: 700;
     column-rule: #131313;
+    margin-bottom: 20px;
 }
 
 /* header styles */
@@ -137,9 +140,11 @@ main {
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
 }
-.features-img img{
+
+.features-img img {
     margin-left: 85px;
 }
+
 .ten-year-badge {
     border-radius: 8px;
     background: #FF900E;
@@ -149,17 +154,19 @@ main {
     position: relative;
     bottom: 150px;
 }
-.ten-year-badge h2{
+
+.ten-year-badge h2 {
     color: #FFF;
     font-size: 4rem;
     font-weight: 700;
     margin: 0;
 }
-.ten-year-badge p{
+
+.ten-year-badge p {
     color: #FFF;
     font-size: 1.50rem;
     font-weight: 500;
-    
+
 }
 
 /* Facts Styles */
@@ -192,6 +199,7 @@ main {
 /* Sponsors Styles */
 .sponsors {
     text-align: center;
+    margin-top: 20px;
 }
 
 .sponsors-img-container {
@@ -204,6 +212,31 @@ main {
 
 .sponsors-img-container img {
     width: 165px;
+}
+
+/* Footer Styles */
+/* footer{
+        max-width: 1440px;
+        max-height: 100px;
+        align-items: center;
+    } */
+    footer{
+        margin: 160px 240px;
+    }
+.footer-container {
+    width: 100%;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+    height: 100%;
+    text-align: center;
+}
+
+.footer-container p {
+    padding: 30px;
+    color: var(--Dark-02, #424242);
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
 }
 
 /* responsive media query */
@@ -221,15 +254,18 @@ main {
     .sponsors-img-container {
         flex-direction: column;
     }
-    .features-img img{
+
+    .features-img img {
         width: 90%;
         margin-left: 0;
     }
-    .ten-year-badge{
+
+    .ten-year-badge {
         max-width: 200px;
         position: static;
-        
+
     }
+
     .team-img-container {
         grid-template-columns: 1fr;
     }
@@ -242,6 +278,12 @@ main {
 
     .facts-card-container {
         gap: 20px;
+    }
+    footer{
+        margin: 50px;
+    }
+    .footer-container p{
+        font-size: 10px;
     }
 }
 
@@ -257,14 +299,18 @@ main {
     .sponsors-img-container {
         flex-direction: column;
     }
-    .features-img img{
+
+    .features-img img {
         width: 90%;
         margin-left: 0;
     }
-    .ten-year-badge{
+
+    .ten-year-badge {
         max-width: 300px;
         position: static;
-        
-    }
 
+    }
+    footer{
+        margin: 50px;
+    }
 }
